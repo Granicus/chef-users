@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: users
-# Recipe:: sysadmins
+# Recipe:: wheel
 #
 # Copyright 2011, Eric G. Wolfe
 # Copyright 2009-2011, Opscode, Inc.
@@ -20,7 +20,8 @@
 
 # Searches data bag "users" for groups attribute "sysadmin".
 # Places returned users in Unix group "sysadmin" with GID 2300.
-users_manage "sysadmin" do
-  group_id 2300
+users_manage "wheel" do
+  group_name "wheel"
   action [ :remove, :create ]
+  group_id 999
 end
