@@ -1,3 +1,7 @@
+## v1.5.2:
+
+* Added wheel and chef groups.
+
 ## v1.5.0:
 
 * [COOK-2427] - Mistakenly released instead of sudo :-).
